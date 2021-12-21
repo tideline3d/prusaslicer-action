@@ -1,11 +1,11 @@
-FROM keyglitch/docker-slic3r-prusa3d:1.41.3
+FROM keyglitch/prusaslicer:2.3.0
 
-LABEL "name"="Slic3r gcode Action"
-LABEL "maintainer"="davidk <kdavid+slic3r+action@gmail.com>"
+LABEL "name"="Prusa Slicer gcode Action"
+LABEL "maintainer"="Tideline3D <support@tideline3d.com>"
 LABEL "version"="1.0.0"
 
-LABEL "com.github.actions.name"="Slic3r Gcode Action"
-LABEL "com.github.actions.description"="Calls Prusa3d's Slic3r fork to generate gcode from STLs"
+LABEL "com.github.actions.name"="Prusa Slicer Action"
+LABEL "com.github.actions.description"="Calls Prusa Slicer to generate gcode from STLs"
 LABEL "com.github.actions.icon"="package"
 LABEL "com.github.actions.color"="blue"
 
