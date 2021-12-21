@@ -101,7 +101,7 @@ for stl in "$@"; do
 	TMPDIR="$(mktemp -d)"
 
 	echo -e "\n>>> Generating STL for ${stl} ...\n"
-	if /Slic3r/slic3r-dist/slic3r \
+	if /Slic3r/slic3r-dist/prusa-slicer \
 		--no-gui \
 		--load "${WORKDIR}/${SLICE_CFG}" \
 		--output-filename-format '{input_filename_base}_{layer_height}mm_{filament_type[0]}_{printer_model}.gcode_updated' \
