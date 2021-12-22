@@ -76,7 +76,7 @@ if [[ -z "${GITHUB_TOKEN}" ]]; then
 	echo -e "\n!!! ERROR: Unable to find your GITHUB_TOKEN !!!"
 	echo
 	echo "Some possible hints on fixing this:"
-	echo "This is a secret that is provided through GitHub Actions. The visual editor can provide more guidance and do this for you automatically"
+	echo "This is a secret that is provided through GitHub Actions. The visual editor can provide more dance and do this for you automatically"
 	echo "To do this manually, add this line to your actions"
 	echo "secret = [\"GITHUB_TOKEN\"]"
 	echo
@@ -102,7 +102,6 @@ for stl in "$@"; do
 
 	echo -e "\n>>> Generating STL for ${stl} ...\n"
 	if /Slic3r/slic3r-dist/prusa-slicer \
-		--no-gui \
 		--load "${WORKDIR}/${SLICE_CFG}" \
 		--output-filename-format '{input_filename_base}_{layer_height}mm_{filament_type[0]}_{printer_model}.gcode_updated' \
 		--output "${TMPDIR}" \
