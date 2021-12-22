@@ -105,7 +105,6 @@ for stl in "$@"; do
 		--load "${WORKDIR}/${SLICE_CFG}" \
 		--output-filename-format '{input_filename_base}_{layer_height}mm_{filament_type[0]}_{printer_model}.gcode_updated' \
 		--output "${TMPDIR}" \
-		--print-center "${CENTER_OF_BED:-100,100}" \
 		"${EXTRA_SLICER_ARGS[@]}" "${WORKDIR}/${stl}"; then
 		echo -e "\n>>> Successfully generated gcode for STL\n"
 	else
